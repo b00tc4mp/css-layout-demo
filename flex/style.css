@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* resets */
+
+* {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* grid */
+
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid__cell-head, .grid__cell-foot {
+    flex-basis: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__cell-center {
+    flex-basis: 80%;
+    display: flex;
+}
+
+.grid__cell-center-aside {
+    flex-basis: 10%;
+}
+
+.grid__cell-center-main {
+    flex-basis: 80%;
+}
