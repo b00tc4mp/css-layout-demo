@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
+
+/* resets */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: "head head head" 
+                        "before-main main after-main" 
+                        "foot foot foot";
+    height: 100%;
+}
+
+.grid__cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Stick No Bills';
+}
+
+.grid__cell--head {
+    grid-area: head;
+}
+
+.grid__cell--before-main {
+    grid-area: before-main;
+}
+
+.grid__cell--main {
+    grid-area: main;
+}
+
+.grid__cell--after-main {
+    grid-area: after-main;
+}
+
+.grid__cell--foot {
+    grid-area: foot;
+}
