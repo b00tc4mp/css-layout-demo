@@ -24,7 +24,7 @@ html, body {
     align-items: center;
 }
 
-/* grid */
+/* blocks */
 
 .grid {
     display: grid;
@@ -38,6 +38,26 @@ html, body {
     "aside-2"
     "foot"
     ;
+}
+
+.grid__head {
+    grid-area: head;
+}
+
+.grid__aside {
+    grid-area: aside;
+}
+
+.grid__main {
+    grid-area: main;
+}
+
+.grid__aside-2 {
+    grid-area: aside-2;
+}
+
+.grid__foot {
+    grid-area: foot;
 }
 
 @media screen and (min-width: 512px) {
@@ -63,24 +83,4 @@ html, body {
         "aside foot foot"
         ;        
     }
-}
-
-.grid__head {
-    grid-area: head;
-}
-
-.grid__aside {
-    grid-area: aside;
-}
-
-.grid__main {
-    grid-area: main;
-}
-
-.grid__aside-2 {
-    grid-area: aside-2;
-}
-
-.grid__foot {
-    grid-area: foot;
 }
